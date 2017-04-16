@@ -1,0 +1,168 @@
+{
+	"city": {
+		"id": 4699066,
+		"name": "Houston",
+		"coord": {
+			"lon": -95.3633,
+			"lat": 29.7633
+		},
+		"country": "US",
+		"population": 0
+	},
+	"cod": "200",
+	"message": 0.4798233,
+	"cnt": 7,
+	"list": [{
+		"dt": 1492279200,
+		"temp": {
+			"day": 72.41,
+			"min": 63.07,
+			"max": 72.41,
+			"night": 63.07,
+			"eve": 72.41,
+			"morn": 72.41
+		},
+		"pressure": 1025.55,
+		"humidity": 44,
+		"weather": [{
+			"id": 500,
+			"main": "Rain",
+			"description": "light rain",
+			"icon": "10n"
+		}],
+		"speed": 4.81,
+		"deg": 147,
+		"clouds": 0
+	}, {
+		"dt": 1492365600,
+		"temp": {
+			"day": 84.67,
+			"min": 63.16,
+			"max": 84.67,
+			"night": 70.16,
+			"eve": 79.32,
+			"morn": 63.16
+		},
+		"pressure": 1027.8,
+		"humidity": 53,
+		"weather": [{
+			"id": 501,
+			"main": "Rain",
+			"description": "moderate rain",
+			"icon": "10d"
+		}],
+		"speed": 4.26,
+		"deg": 160,
+		"clouds": 44,
+		"rain": 3.92
+	}, {
+		"dt": 1492452000,
+		"temp": {
+			"day": 80.67,
+			"min": 65.44,
+			"max": 80.67,
+			"night": 67.87,
+			"eve": 77.09,
+			"morn": 65.44
+		},
+		"pressure": 1026.96,
+		"humidity": 68,
+		"weather": [{
+			"id": 501,
+			"main": "Rain",
+			"description": "moderate rain",
+			"icon": "10d"
+		}],
+		"speed": 2.51,
+		"deg": 160,
+		"clouds": 36,
+		"rain": 6.61
+	}, {
+		"dt": 1492538400,
+		"temp": {
+			"day": 80.83,
+			"min": 66.94,
+			"max": 80.83,
+			"night": 69.24,
+			"eve": 79.81,
+			"morn": 66.94
+		},
+		"pressure": 1027.18,
+		"humidity": 0,
+		"weather": [{
+			"id": 500,
+			"main": "Rain",
+			"description": "light rain",
+			"icon": "10d"
+		}],
+		"speed": 3.37,
+		"deg": 146,
+		"clouds": 30,
+		"rain": 1.97
+	}, {
+		"dt": 1492624800,
+		"temp": {
+			"day": 83.48,
+			"min": 63.57,
+			"max": 83.48,
+			"night": 70.77,
+			"eve": 82.17,
+			"morn": 63.57
+		},
+		"pressure": 1028.3,
+		"humidity": 0,
+		"weather": [{
+			"id": 800,
+			"main": "Clear",
+			"description": "sky is clear",
+			"icon": "01d"
+		}],
+		"speed": 2.2,
+		"deg": 144,
+		"clouds": 0
+	}, {
+		"dt": 1492711200,
+		"temp": {
+			"day": 83.77,
+			"min": 65.61,
+			"max": 83.77,
+			"night": 73.15,
+			"eve": 81.54,
+			"morn": 65.61
+		},
+		"pressure": 1024.41,
+		"humidity": 0,
+		"weather": [{
+			"id": 500,
+			"main": "Rain",
+			"description": "light rain",
+			"icon": "10d"
+		}],
+		"speed": 4.54,
+		"deg": 160,
+		"clouds": 16,
+		"rain": 0.25
+	}, {
+		"dt": 1492797600,
+		"temp": {
+			"day": 84.18,
+			"min": 72.12,
+			"max": 84.18,
+			"night": 74.75,
+			"eve": 80.4,
+			"morn": 72.12
+		},
+		"pressure": 1020.39,
+		"humidity": 0,
+		"weather": [{
+			"id": 500,
+			"main": "Rain",
+			"description": "light rain",
+			"icon": "10d"
+		}],
+		"speed": 7.07,
+		"deg": 143,
+		"clouds": 20,
+		"rain": 0.34
+	}]
+}

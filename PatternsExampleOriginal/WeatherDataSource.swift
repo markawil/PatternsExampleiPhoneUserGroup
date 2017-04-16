@@ -8,15 +8,19 @@
 
 import Foundation
 
-struct WeatherDataSource {
+class WeatherDataSource {
     
-    /// lets NOT use a singleton
+    let persistance: Persistance
+    let webClient: Client
     
-    let coreDataHelper = CoreDataHelper.sharedInstance
+    init(persistance: Persistance, client: Client) {
+        self.persistance = persistance
+        self.webClient = client
+    }
     
-    func latest10DaysOfWeather() -> [WeatherDay]? {
+    func latest10DaysOfWeather(completion:(_ weatherDays:[WeatherDay]?, _ errorString: String?) -> ()) -> [WeatherDay]? {
         
-        // use the CDH to make a fetch request on the cache, see what it returns
+        // use the persistance request the cache, use the client to get back updated async data
         
         return nil
     }

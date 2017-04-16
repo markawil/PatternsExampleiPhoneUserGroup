@@ -15,6 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Bootstrap().registerFakes()
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let navController = storyboard.instantiateInitialViewController() as? UINavigationController {
+            let viewController = navController.topViewController as? ViewController
+            let persistance = resolver.resolve(type: Persistance.self)
+            let client = resolver.resolve(type: Client.self)
+            viewController?.weatherDataSource = WeatherDataSource(persistance: persistance!, client: client!)
+        }
+        
         return true
     }
 
@@ -41,5 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Saves changes in the application's managed object context before the application terminates.
         CoreDataHelper.sharedInstance.saveContext()
     }
+    
+    let resolver = DependencyResolver.sharedResolver
 }
 

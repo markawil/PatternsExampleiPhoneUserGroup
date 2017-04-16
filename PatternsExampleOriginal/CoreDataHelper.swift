@@ -9,10 +9,10 @@
 import Foundation
 import CoreData
 
+
 class CoreDataHelper {
     
     static let sharedInstance = CoreDataHelper()
-    
     // MARK: - Core Data stack
     
     lazy var persistentContainer: NSPersistentContainer = {
