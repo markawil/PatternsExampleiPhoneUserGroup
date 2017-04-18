@@ -14,14 +14,16 @@ class DependencyResolver {
     
     var map = [String:AnyObject]()
     
-    func register<T>(type:T.Type, instance: AnyObject) {
+    func register<T>(instance: T) {
         
+        let type = T.self
         let typeString = "\(type)"
-        map[typeString] = instance
+        map[typeString] = instance as AnyObject
     }
     
-    func resolve<T>(type:T.Type) -> T? {
+    func resolve<T>() -> T? {
         
+        let type = T.self
         let typeString = "\(type)"
         if map.keys.contains(typeString) {
             return map[typeString] as? T

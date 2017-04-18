@@ -12,13 +12,13 @@ class Bootstrap {
     
     func registerFakes() {
         
-        DependencyResolver.sharedResolver.register(type: Client.self, instance: FakeWebClient())
-        DependencyResolver.sharedResolver.register(type: Persistance.self, instance: UserDefaultsPersistance())
+        DependencyResolver.sharedResolver.register(instance: FakeWebClient() as Client)
+        DependencyResolver.sharedResolver.register(instance: UserDefaultsPersistance() as Persistance)
     }
     
     func registerReals() {
         
-        DependencyResolver.sharedResolver.register(type: Client.self, instance: WebClient())
-        DependencyResolver.sharedResolver.register(type: Persistance.self, instance: CoreDataPersistance())
+        DependencyResolver.sharedResolver.register(instance: WebClient() as Client)
+        DependencyResolver.sharedResolver.register(instance: CoreDataPersistance() as Persistance)
     }
 }
