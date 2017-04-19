@@ -17,7 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        Bootstrap().registerReals()
+        
+        // change this to use Reals instead
+        Bootstrap().registerFakes()
         
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         if let navController = storyboard.instantiateInitialViewController() as? UINavigationController {
@@ -27,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             viewController?.weatherDataSource = WeatherDataSource(persistance: persistance!, client: client!)
             self.window?.rootViewController = navController
             self.window?.makeKeyAndVisible()
-        }        
+        }
         
         return true
     }
